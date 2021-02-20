@@ -1,70 +1,105 @@
-# Getting Started with Create React App
+<h1 align="center">
+   😸 <a href=""> Cat Paradise </a>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+    This mini project is the part of 30 Days of React challenge.
+</h3>
 
-## Available Scripts
+<h4 align="center"> 
+	 Status: Finished
+</h4>
 
-In the project directory, you can run:
+<p align="center">
+ <a href="#about">About</a> •
+ <a href="#features">Features</a> •
+ <a href="#screenshots">Screenshots</a> • 
+ <a href="#how-it-works">How it works</a> • 
+ <a href="#tech-stack">Tech Stack</a> 
+</p>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## About
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+😸: Cat-Paradise gives you all the info you need regarding your favorite cat.
+---
 
-### `yarn test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   - [x] Used class component demonstrating use of Component Life Cycle
+   - [x] Used Axios to fetch data
+   - [x] Modal to display data
+   - [x] Tags to filter out cats on the basis of their country of origin
+---
 
-### `yarn build`
+## Screenshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <img alt="cases" src="https://github.com/Yola21/Cat-Paradise/blob/main/image/cat-paradise.gif">
+</p>
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How it works
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project have two parts:
+1. Frontend
+2. Hosting
 
-### `yarn eject`
+It will need an account in Google to connect it to the Firebase for Hosting.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Pre-requisites
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Before you begin, you will need to have the following tools installed on your machine:
+[Git] (https://git-scm.com).
+In addition, it is good to have an editor to work with the code like [VSCode] (https://code.visualstudio.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Running the web application
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
 
-## Learn More
+# Clone this repository
+$ git clone https://github.com/Yola21/Cat-Paradise.git
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Go to your local repository:
+$ cd [local repository]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Check package.json file and ensure scripts are notated as below:
 
-### Code Splitting
+$ "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  
+# Delete the node_modules folder and any 'lock' files such as 
+yarn.lock or package-lock.json (if present).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Install dependencies
+$ npm install
 
-### Analyzing the Bundle Size
+# Run the application
+$ npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Tech Stack
 
-### Advanced Configuration
+The following tools were used in the construction of the project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### **Website**  ([React](https://reactjs.org/))
 
-### Deployment
+-   **[Axios](https://www.npmjs.com/package/axios)**
+-   **[Firebase](https://firebase.google.com/)**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+> See the file  [package.json](https://github.com/Yola21/Cat-Paradise/blob/main/package.json)
 
-### `yarn build` fails to minify
+#### **Utilities**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)** 
+
+---
+
+<h3 align="center"><b>Developed with :heart: by <a href="https://github.com/Yola21">Yash</a></b></h1>
