@@ -1,0 +1,38 @@
+.tag{
+    position: sticky;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #ee6c4d;
+    border-radius: 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.tag_heading{
+    text-align: center;
+    margin: 10px;
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.tag_list{
+    display: grid;
+    grid-template-columns: repeat(3, 9.5rem);
+    justify-self: center;
+    align-self: center;
+}
+
+button{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    margin: 5px;
+    padding: 10px;
+    background-color: rgba(236, 186, 168, 0.8);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}

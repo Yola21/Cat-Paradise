@@ -1,0 +1,97 @@
+.body{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+.body_card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 21rem;
+    height: 26rem;
+    margin: 15px 4.5px;
+    padding: 8px;
+    padding-top: 0;
+}
+
+.body_cardImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.body_cardImage img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.body_cardInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.body_cardInfo h3{
+    font-family: 'Lobster', cursive;
+    font-size: 25px;
+}
+
+.body_cardInfo button{
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: cornflowerblue;
+    font-weight: 500;
+    border: none;
+}
+
+.modal_Briefinfo > img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.modal_Briefinfo{
+    display: flex;
+    align-items: flex-start;
+}
+
+.modal_Heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+.modal_Moreinfo{
+    margin-top: 10px;
+}
+
+.modal_Moreinfo p{
+    font-size: 18px;
+}
+
+.modal_Moreinfo span{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.modal_Button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: red;
+    color: #fff;
+    font-weight: 500;
+}
