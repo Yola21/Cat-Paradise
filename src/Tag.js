@@ -1,28 +1,22 @@
 import React, { Component } from 'react';
 import './Tag.css';
 
-const frequency  = [];
-
 class Tag extends Component{
     state = {
         filterIndex: null,
     }
 
-    origin = () => {
-        this.props.data.map((country) => (
-            frequency.push(country?.origin)
-        ))
-    
+    origin = () => {    
         const countOrigin = (countryName) => {
-            const count = frequency.filter((origin) => (
-                origin === countryName
+            const count = this.props.data.filter((country) => (
+                country?.origin === countryName
             ))
-            return(  
-                count.length
-            )
+            return count.length
         }
              
-        const uniqueOrigin = frequency.filter((value, index, self) => (
+        const uniqueOrigin = this.props.data.map((country) => {
+            return country?.origin
+        }).filter((value, index, self) => (
             self.indexOf(value) === index
         ))
         
@@ -40,6 +34,7 @@ class Tag extends Component{
                     <h3>Origin</h3>
                 </div>
                 <div className="tag_list">
+                    {/* <button onClick={(e) => {this.props.handleOrigin(e, this.props.data)}} >All (67)</button> */}
                     {
                         this.origin()
                     }

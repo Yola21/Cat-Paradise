@@ -1,3 +1,10 @@
+h1{
+    text-align: center;
+    color: #fff;
+    font-style: oblique;
+    text-decoration: underline;
+}
+
 .app_Divider{
     display: flex;
     align-items: flex-start;

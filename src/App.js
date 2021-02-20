@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Body from './Body';
-import Header from './Header';
 import Tag from './Tag';
 import axios from 'axios';
 
@@ -44,7 +43,7 @@ class App extends Component{
 
     return(
       <div className="app">
-        <Header />
+        <h1>Cat Paradise</h1>
         <div className="app_Divider">
           <Body data={ this.state.origin === null ? this.state.data : filteredOrigin } />
           <Tag data={ this.state.data }  handleOrigin={ this.handleOrigin } /> 
