@@ -35,6 +35,12 @@ class App extends Component{
     })
   )
 
+  handleChangeState = () => (
+    this.setState({
+      origin: null,      
+    })
+  )
+
   render(){
     console.log(this.state.origin)
     let filteredOrigin = this.state.data.filter((cat) => {
@@ -46,7 +52,7 @@ class App extends Component{
         <h1>Cat Paradise</h1>
         <div className="app_Divider">
           <Body data={ this.state.origin === null ? this.state.data : filteredOrigin } />
-          <Tag data={ this.state.data }  handleOrigin={ this.handleOrigin } /> 
+          <Tag data={ this.state.data } handleOrigin={ this.handleOrigin } handleChangeState={ this.handleChangeState } /> 
         </div>
       </div>
     )
