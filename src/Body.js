@@ -22,7 +22,7 @@ class Body extends Component{
                         return(
                             <div className="body_card" key={cat.id}>
                                 <div className="body_cardImage">
-                                    <img src={cat.image?.url} alt={cat.name} />
+                                    <img src={cat.image ? cat.image.url : "https://geek.hellyer.kiwi/files/2017/06/cat-404.jpg"} alt={cat.name} />
                                 </div>
                                 
                                 <div className="body_cardInfo">
